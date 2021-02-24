@@ -5,8 +5,8 @@
     <script type="text/javascript">
       function handleClick(e)
       {
-        document.getElementById("out").value="Host: "+Office.context.diagnostics.host;
-        Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, function (asyncResult){
+        document.getElementById("out").value="Office: "+Office;
+        /*Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, function (asyncResult){
           document.getElementById("out").value="async visszatért";
           if(asyncResult.status == Office.AsyncResultStatus.Failed)
           {
@@ -16,12 +16,12 @@
           {
             document.getElementById("out").value='Selected data: ' + asyncResult.value;
           }
-        });
+        });*/
       }
     </script>
   </head>
   <body>
-    <div>4</div>
+    <div>5</div>
     <input type="button" value="Click me!" onclick="handleClick(event);"></input>
     <output id="out" value="---"></output>
   </body>
