@@ -5,7 +5,7 @@
     <script type="text/javascript">
       function handleClick(e)
       {
-        document.getElementById("out").value="kattintott";
+        document.getElementById("out").value="Host: "+Office.context.diagnostics.host;
         Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, function (asyncResult){
           document.getElementById("out").value="async visszatért";
           if(asyncResult.status == Office.AsyncResultStatus.Failed)
@@ -21,7 +21,7 @@
     </script>
   </head>
   <body>
-    <div>3</div>
+    <div>4</div>
     <input type="button" value="Click me!" onclick="handleClick(event);"></input>
     <output id="out" value="---"></output>
   </body>
