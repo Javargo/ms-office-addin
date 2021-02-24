@@ -5,12 +5,21 @@
     <script type="text/javascript">
       function handleClick(e)
       {
-        document.getElementById("out").value="Hello";
+        Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, function (asyncResult){
+          if(asyncResult.status == Office.AsyncResultStatus.Failed)
+          {
+            document.getElementById("out").value='Action failed. Error: ' + asyncResult.error.message;
+          }
+          else
+          {
+            document.getElementById("out").value'Selected data: ' + asyncResult.value;
+          }
+        });
       }
     </script>
   </head>
   <body>
-    <div>Szia világ!</div>
+    <div>1</div>
     <input type="button" value="Click me!" onclick="handleClick(event);"></input>
     <output id="out"></output>
   </body>
