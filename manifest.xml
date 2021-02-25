@@ -3,12 +3,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
   xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
-  <Id>05c3e1c9-3e1d-406f-9b91-e9ac75854143</Id>
+  <Id>d71fc370-93c5-44c1-bad9-cf4ad9f5e315</Id>
   <Version>1.0.0.0</Version>
   <ProviderName>Javargo</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Javargo Test Task Pane Add-in"/>
-  <Description DefaultValue="Got started."/>
+  <DisplayName DefaultValue="Javargo Task Pane Add-in"/>
+  <Description DefaultValue="K*I*P*O"/>
   <IconUrl DefaultValue="https://javargo.github.io/ms-office-addin/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://javargo.github.io/ms-office-addin/assets/icon-64.png"/>
   <SupportUrl DefaultValue="https://javargo.github.io/ms-office-addin/help"/>
@@ -80,7 +80,7 @@
         <bt:String id="TaskpaneButton.Label" DefaultValue="Show Taskpane" />
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="Yeah!!! Your sample add-in loaded succesfully. Go to the HOME tab and click the 'Show Taskpane' button to get started." />
+        <bt:String id="GetStarted.Description" DefaultValue="Your sample add-in loaded succesfully. Go to the HOME tab and click the 'Show Taskpane' button to get started." />
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to Show a Taskpane" />
       </bt:LongStrings>
     </Resources>
