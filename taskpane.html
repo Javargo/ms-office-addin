@@ -23,11 +23,11 @@
 <body class="ms-font-m ms-welcome ms-Fabric">
     <header class="ms-welcome__header ms-bgColor-neutralLighter">
         <img width="90" height="90" src="../../assets/logo-filled.png" alt="Contoso" title="Contoso" />
-        <h1 class="ms-font-su">Welcome 1</h1>
+        <h1 id="begu" class="ms-font-su">W E L C O M E   2</h1>
     </header>
     <section id="sideload-msg" class="ms-welcome__main">
         <h2 class="ms-font-xl">Please sideload your add-in to see app body.</h2>
-        <input type="button" value="CLICK ME!" onclick="alert('Hello');"></input>
+        <input type="button" value="CLICK ME!" onclick="document.getElementById('begu').textContent='Hello';"></input>
     </section>
     <main id="app-body" class="ms-welcome__main" style="display: none;">
         <h2 class="ms-font-xl"> Discover what Office Add-ins can do for you today! </h2>
