@@ -20,7 +20,7 @@
     <link href="taskpane.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
     Office.onReady(info => {
-        document.getElementById('begu').textContent='Jello';
+        document.getElementById('begu').textContent='Jello '+info.host;
   if (info.host === Office.HostType.Word) {
     document.getElementById("sideload-msg").style.display = "none";
     document.getElementById("app-body").style.display = "flex";
@@ -41,7 +41,7 @@ async function run() {
 <body class="ms-font-m ms-welcome ms-Fabric">
     <header class="ms-welcome__header ms-bgColor-neutralLighter">
         <img width="90" height="90" src="../../assets/logo-filled.png" alt="Contoso" title="Contoso" />
-        <h1 id="begu" class="ms-font-su">W E L C O M E   2</h1>
+        <h1 id="begu" class="ms-font-su">W E L C O M E   3</h1>
     </header>
     <section id="sideload-msg" class="ms-welcome__main">
         <h2 class="ms-font-xl">Please sideload your add-in to see app body.</h2>
