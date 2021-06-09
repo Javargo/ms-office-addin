@@ -6,7 +6,8 @@ Office.onReady(info => {
 
 async function run() {
 	return Word.run(async context => {
-    	const paragraph = context.document.body.insertParagraph("Hello World", Word.InsertLocation.end);
+	const z=context.document.customXmlParts.getCount();
+    	const paragraph = context.document.body.insertParagraph(z, Word.InsertLocation.end);
     	paragraph.font.color = "blue";
     	await context.sync();
   	});
