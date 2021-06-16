@@ -8,9 +8,14 @@ async function run() {
 	Office.context.document.customXmlParts.addAsync(
         '<root categoryId="1" xmlns="http://tempuri.org"><item name="Cheap Item" price="$193.95"/><item name="Expensive Item" price="$931.88"/></root>',
         function (result) {});
+	await context.sync();
 	return Word.run(async context => {
-    	const paragraph = context.document.body.insertParagraph("Hello again!", Word.InsertLocation.end);
-    	paragraph.font.color = "blue";
-    	await context.sync();
+    		const paragraph = context.document.body.insertParagraph("Hello again!", Word.InsertLocation.end);
+    		paragraph.font.color = "blue";
+    		await context.sync();
+		let rngCC = rngTarget.getRange("End");
+		let cc = rngCC.insertContentControl();
+		cc.title="Cégnév";
+		
   	});
 }
